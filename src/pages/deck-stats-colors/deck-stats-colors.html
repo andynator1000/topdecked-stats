@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{deck.name}} - Colors</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>{{deck.name}}</h1>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 col-md-4>
+        <h2>Main</h2>
+        <div *ngFor="let card of deck.main" [class.active]="cardActive(card)">
+          {{card.name}}
+        </div>
+        <h2>SB</h2>
+        <div *ngFor="let card of deck.sb" [class.active]="cardActive(card)">
+          {{card.name}}
+        </div>
+      </ion-col>
+      <ion-col col-12 col-md-8>
+        <canvas baseChart
+          [data]="colorsChartData"
+          [labels]="colorsChartLabels"
+          [legend]="false"
+          [chartType]="colorsChartType"
+          (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)"></canvas>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
