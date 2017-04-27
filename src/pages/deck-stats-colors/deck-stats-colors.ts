@@ -28,6 +28,15 @@ export class DeckStatsColorsPage {
 	public colorsChartData: number[] = [0, 0, 0, 0, 0, 0];
 	public colorsChartType: string = 'pie';
 	public colorsHover: string = "";
+	public colorsChartColors: any[] = [{
+		backgroundColor: [
+		/* blue*/ "#0000CC",
+		/*black*/"#000000",
+		/*red*/"#CC0000",
+		/*green*/"#008000",
+		/*white*/"#FFFACD",
+		/*other*/"#D3D3D3"]
+	}];
 
 	constructor(
 		public cardService: CardService,

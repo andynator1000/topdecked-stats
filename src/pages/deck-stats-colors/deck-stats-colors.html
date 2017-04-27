@@ -24,8 +24,10 @@
           [labels]="colorsChartLabels"
           [legend]="false"
           [chartType]="colorsChartType"
+          [colors]="colorsChartColors"
           (chartHover)="chartHovered($event)"
-          (chartClick)="chartClicked($event)"></canvas>
+          (chartClick)="chartClicked($event)">
+          </canvas>
       </ion-col>
     </ion-row>
   </ion-grid>
