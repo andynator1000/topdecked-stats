@@ -58,15 +58,15 @@ export class DeckStatsColorsPage {
 		for (let card of this.deck.main) {
 			if (!cardService.cardIsTypes(card, [this.land])) {
 				if (card.colorIdentity) {
-					if (card.colorIdentity.indexOf('U') > -1) {
+					if (card.colors.indexOf('Blue') > -1) {
 						this.colorsChartData[0]++;
-					} else if (card.colorIdentity.indexOf('B') > -1) {
+					} if (card.colors.indexOf('Black') > -1) {
 						this.colorsChartData[1]++;
-					} else if (card.colorIdentity.indexOf('R') > -1) {
+					} if (card.colors.indexOf('Red') > -1) {
 						this.colorsChartData[2]++;
-					} else if (card.colorIdentity.indexOf('G') > -1) {
+					} if (card.colors.indexOf('Green') > -1) {
 						this.colorsChartData[3]++;
-					} else if (card.colorIdentity.indexOf('W') > -1) {
+					} if (card.colors.indexOf('W') > -1) {
 						this.colorsChartData[4]++;
 					}
 				} else {
