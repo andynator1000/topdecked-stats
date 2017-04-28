@@ -66,7 +66,7 @@ export class DeckStatsColorsPage {
 						this.colorsChartData[2]++;
 					} if (card.colors.indexOf('Green') > -1) {
 						this.colorsChartData[3]++;
-					} if (card.colors.indexOf('W') > -1) {
+					} if (card.colors.indexOf('White') > -1) {
 						this.colorsChartData[4]++;
 					}
 				} else {
