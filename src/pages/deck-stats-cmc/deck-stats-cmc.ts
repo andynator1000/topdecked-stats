@@ -27,7 +27,7 @@ export class DeckStatsCMCPage {
 	public cmcChartLabels: string[] = ['CMC 0', 'CMC 1', 'CMC 2', 'CMC 3', "CMC 4", "CMC 5", "CMC 6+"];
 	public cmcChartData: number[] = [0, 0, 0, 0, 0, 0, 0];
 	public cmcChartType: string = 'bar';
-	public cmcHover: string = "";
+	public cmcHover: number = null;
 
 	constructor(
 		public cardService: CardService,
